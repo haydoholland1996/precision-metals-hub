@@ -16,7 +16,6 @@ import {
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import PricingBadge from "@/components/PricingBadge";
-import processHero from "@/assets/process-hero.jpg";
 
 const qualities = [
   {
@@ -94,12 +93,8 @@ const Process = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${processHero})` }}
-        />
-        <div className="absolute inset-0 hero-gradient" />
+      <section className="relative min-h-[70vh] flex items-center bg-background">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         
         <div className="container relative z-10 py-20">
           <div className="max-w-4xl">
