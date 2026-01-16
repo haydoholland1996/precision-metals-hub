@@ -76,6 +76,17 @@ const Header = () => {
           </DropdownMenu>
 
           <Link
+            to="/process"
+            className={`text-sm font-medium transition-colors ${
+              isActive("/process")
+                ? "text-primary"
+                : "text-foreground-secondary hover:text-foreground"
+            }`}
+          >
+            Process
+          </Link>
+
+          <Link
             to="/about"
             className={`text-sm font-medium transition-colors ${
               isActive("/about")
@@ -167,6 +178,13 @@ const Header = () => {
             </div>
 
             <div className="space-y-2 pt-4 border-t border-border">
+              <Link
+                to="/process"
+                className="block py-2 text-foreground-secondary hover:text-foreground"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Process
+              </Link>
               <Link
                 to="/about"
                 className="block py-2 text-foreground-secondary hover:text-foreground"
