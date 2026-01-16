@@ -163,8 +163,35 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
-            <p className="text-foreground-secondary">
+          {/* New Products Callout */}
+          <div className="mt-12 p-8 bg-card rounded-xl border border-primary/30 shadow-glow">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-sm font-semibold rounded-full mb-3">
+                  NEW PRODUCTS
+                </span>
+                <h3 className="text-2xl font-bold mb-2">Now Offering Solid Stock</h3>
+                <p className="text-foreground-secondary text-lg">
+                  WHA Rods & Bars and Refractory Metal Bar, Plate, Sheet, Rod & Wire now available.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <Button asChild variant="default">
+                  <Link to="/products/tungsten-heavy-alloy-rods">
+                    WHA Rods <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline">
+                  <Link to="/products/refractory-metal-bar-plate">
+                    Refractory Bar & Plate <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-foreground-secondary text-lg">
               <span className="text-foreground font-medium">Custom particle size distributions</span>{" "}
               | 300kg+ capacity | Fast lead times
             </p>
@@ -282,32 +309,34 @@ const Index = () => {
       </section>
 
       {/* SEO Content Block */}
-      <section className="py-16 bg-background-secondary border-t border-border">
+      <section className="py-24 bg-background-secondary border-t border-border">
         <div className="container">
-          <div className="max-w-4xl mx-auto prose prose-invert prose-sm">
-            <h2 className="text-xl font-semibold mb-4 text-foreground">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">
               Your Trusted US Titanium & Refractory Metal Powder Supplier
             </h2>
-            <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
-              Metal Powder Supply is a leading US titanium powder supplier and
-              tungsten powder manufacturer, serving the aerospace, defense, and
-              energy industries. Our American-produced strategic metal powders meet
-              the highest quality standards, with AS9100D and ISO 9001:2015
-              certifications ensuring consistent excellence.
-            </p>
-            <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
-              As a comprehensive refractory metal powder supplier, we offer custom
-              particle size distributions for titanium, tungsten, molybdenum,
-              tantalum, niobium, and C103 alloy powders. Our materials are optimized
-              for additive manufacturing, PM-HIP processing, and other advanced
-              manufacturing applications.
-            </p>
-            <p className="text-foreground-secondary text-sm leading-relaxed">
-              With minimum order quantities of 300kg and expedited lead times
-              available, Metal Powder Supply is your partner for high-volume,
-              mission-critical metal powder sourcing. Contact us today to discuss
-              your aerospace metal powder or defense metal powder requirements.
-            </p>
+            <div className="space-y-6 text-foreground-secondary text-lg leading-relaxed">
+              <p>
+                Metal Powder Supply is a leading US titanium powder supplier and
+                tungsten powder manufacturer, serving the aerospace, defense, and
+                energy industries. Our American-produced strategic metal powders meet
+                the highest quality standards, with AS9100D and ISO 9001:2015
+                certifications ensuring consistent excellence.
+              </p>
+              <p>
+                As a comprehensive refractory metal powder supplier, we offer custom
+                particle size distributions for titanium, tungsten, molybdenum,
+                tantalum, niobium, and C103 alloy powders. Our materials are optimized
+                for additive manufacturing, PM-HIP processing, and other advanced
+                manufacturing applications.
+              </p>
+              <p>
+                With minimum order quantities of 300kg and expedited lead times
+                available, Metal Powder Supply is your partner for high-volume,
+                mission-critical metal powder sourcing. Contact us today to discuss
+                your aerospace metal powder or defense metal powder requirements.
+              </p>
+            </div>
           </div>
         </div>
       </section>
