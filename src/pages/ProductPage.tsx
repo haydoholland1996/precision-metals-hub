@@ -199,12 +199,9 @@ const ProductPage = () => {
         
         <div className="container relative z-10 py-20">
           <div className="max-w-4xl">
-            <div className="flex items-center gap-6 mb-6 animate-fade-in">
+            <div className="mb-6 animate-fade-in">
               <span className="text-8xl md:text-9xl font-bold text-primary drop-shadow-lg">
                 {metal.symbol}
-              </span>
-              <span className="text-primary font-medium uppercase tracking-wider text-sm">
-                Metal Powder
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
