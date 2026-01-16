@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import Logo from "@/components/Logo";
 
 const products = [
@@ -127,17 +127,6 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="mt-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-secondary hover:bg-secondary/80 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5 text-foreground-secondary" />
-              </a>
-            </div>
           </div>
         </div>
 
