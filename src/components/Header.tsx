@@ -18,7 +18,7 @@ const products = [
   { name: "Niobium Powder", href: "/products/niobium-powder", symbol: "Nb" },
   { name: "C103 Alloy Powder", href: "/products/c103-alloy-powder", symbol: "C103" },
   { name: "WHA Rods & Bars", href: "/products/tungsten-heavy-alloy-rods", symbol: "WHA" },
-  { name: "Refractory Bar & Plate", href: "/products/refractory-metal-bar-plate", symbol: "Mo/Ta/Nb/W" },
+  { name: "Refractory Bar & Plate", href: "/products/refractory-metal-bar-plate", symbol: "RM" },
 ];
 
 const services = [
