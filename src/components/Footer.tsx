@@ -9,6 +9,8 @@ const products = [
   { name: "Tantalum Powder", href: "/products/tantalum-powder" },
   { name: "Niobium Powder", href: "/products/niobium-powder" },
   { name: "C103 Alloy", href: "/products/c103-alloy-powder" },
+  { name: "WHA Rods & Bars", href: "/products/tungsten-heavy-alloy-rods" },
+  { name: "Refractory Bar & Plate", href: "/products/refractory-metal-bar-plate" },
 ];
 
 const services = [
