@@ -197,7 +197,7 @@ const PowderInquiry = () => {
                   <Input
                     id="quantity"
                     name="quantity"
-                    placeholder="e.g., 1000kg"
+                    placeholder="e.g., 300kg"
                     className="bg-background border-border"
                   />
                 </div>

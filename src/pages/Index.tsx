@@ -165,7 +165,7 @@ const Index = () => {
           <div className="mt-12 text-center">
             <p className="text-foreground-secondary">
               <span className="text-foreground font-medium">Custom particle size distributions</span>{" "}
-              | 1000kg+ capacity | Fast lead times
+              | 300kg+ capacity | Fast lead times
             </p>
           </div>
         </div>
@@ -302,7 +302,7 @@ const Index = () => {
               manufacturing applications.
             </p>
             <p className="text-foreground-secondary text-sm leading-relaxed">
-              With minimum order quantities of 1000kg and expedited lead times
+              With minimum order quantities of 300kg and expedited lead times
               available, Metal Powder Supply is your partner for high-volume,
               mission-critical metal powder sourcing. Contact us today to discuss
               your aerospace metal powder or defense metal powder requirements.

@@ -272,7 +272,7 @@ const ProductPage = () => {
               <h3 className="font-semibold text-foreground mb-2">
                 Minimum Order
               </h3>
-              <p className="text-foreground-secondary text-sm">1000kg</p>
+              <p className="text-foreground-secondary text-sm">300kg</p>
             </div>
             <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
               <h3 className="font-semibold text-foreground mb-2">Lead Time</h3>
