@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Atom, Shield, Plane, Factory } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import PricingBadge from "@/components/PricingBadge";
 
 // Import hero images
 import titaniumHero from "@/assets/titanium-hero.jpg";
@@ -413,6 +414,8 @@ const ProductPage = () => {
           </div>
         </div>
       </section>
+
+      <PricingBadge />
     </Layout>
   );
 };

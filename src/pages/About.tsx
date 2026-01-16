@@ -1,5 +1,6 @@
-import { Factory, Shield, Clock, Users, CheckCircle } from "lucide-react";
+import { Factory, Shield, Clock, Users, CheckCircle, Handshake, TrendingDown, Award } from "lucide-react";
 import Layout from "@/components/Layout";
+import PricingBadge from "@/components/PricingBadge";
 
 const certifications = [
   { name: "AS9100D", description: "Aerospace Quality Management" },
@@ -27,6 +28,24 @@ const pillars = [
     title: "Partnership",
     description: "Long-term customer relationships built on trust",
     icon: Users,
+  },
+];
+
+const partnershipBenefits = [
+  {
+    title: "Competitive Pricing",
+    description: "We actively work to beat your current supplier pricing. Share your quotes with us—we're confident we can offer better value without compromising quality.",
+    icon: TrendingDown,
+  },
+  {
+    title: "Long-Term Partnerships",
+    description: "We don't just sell powder—we build relationships. Recurring customers enjoy priority scheduling, dedicated support, and pricing that improves over time.",
+    icon: Handshake,
+  },
+  {
+    title: "Consistent Quality",
+    description: "Every batch meets the same exacting standards. Our certified processes ensure you get identical material properties order after order, year after year.",
+    icon: Award,
   },
 ];
 
@@ -128,8 +147,39 @@ const About = () => {
         </div>
       </section>
 
+      {/* Partnership & Pricing */}
+      <section className="py-24 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <div className="container relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Built for Long-Term Partnerships
+            </h2>
+            <p className="text-foreground-secondary max-w-2xl mx-auto">
+              We're not just a supplier—we're your strategic partner. Our business model is built around helping you succeed with the best pricing, quality, and service in the industry.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {partnershipBenefits.map((benefit) => (
+              <div
+                key={benefit.title}
+                className="bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-all hover:shadow-glow"
+              >
+                <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                  <benefit.icon className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
+                <p className="text-foreground-secondary">
+                  {benefit.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* USA Produced */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-background-secondary">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <img
@@ -147,6 +197,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <PricingBadge />
     </Layout>
   );
 };
