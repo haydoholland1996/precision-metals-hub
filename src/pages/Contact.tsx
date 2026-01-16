@@ -110,14 +110,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="h-96 bg-background-tertiary flex items-center justify-center">
-        <div className="text-center">
-          <MapPin className="h-12 w-12 text-foreground-muted mx-auto mb-4" />
-          <p className="text-foreground-muted">Map Integration</p>
-          <p className="text-foreground-muted text-sm">Houston, TX</p>
-        </div>
-      </section>
     </Layout>
   );
 };
