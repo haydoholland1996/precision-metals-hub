@@ -363,17 +363,33 @@ const ProductPage = () => {
       </section>
 
       {/* SEO Content */}
-      <section className="py-16 bg-background-secondary border-t border-border">
+      <section className="py-24 bg-background-secondary border-t border-border">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            {metal.seoContent.map((paragraph, index) => (
-              <p
-                key={index}
-                className="text-foreground-secondary text-sm leading-relaxed mb-4"
-              >
-                {paragraph}
-              </p>
-            ))}
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+              Why Choose Our {metal.name} Powder
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {metal.seoContent.map((paragraph, index) => {
+                const icons = [Factory, Shield, Plane];
+                const titles = ["Industry Leader", "Quality Assured", "Expert Support"];
+                const IconComponent = icons[index % icons.length];
+                return (
+                  <div
+                    key={index}
+                    className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors"
+                  >
+                    <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <IconComponent className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-lg mb-3">{titles[index % titles.length]}</h3>
+                    <p className="text-foreground-secondary text-sm leading-relaxed">
+                      {paragraph}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
