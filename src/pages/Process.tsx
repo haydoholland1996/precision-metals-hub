@@ -16,6 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import PricingBadge from "@/components/PricingBadge";
+import processHero from "@/assets/process-hero.jpg";
 
 const qualities = [
   {
@@ -93,23 +94,28 @@ const Process = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-24 bg-background">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="container relative z-10">
+      <section className="relative min-h-[70vh] flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${processHero})` }}
+        />
+        <div className="absolute inset-0 hero-gradient" />
+        
+        <div className="container relative z-10 py-20">
           <div className="max-w-4xl">
-            <span className="inline-block text-primary font-medium uppercase tracking-wider text-sm mb-4">
+            <span className="inline-block text-primary font-medium uppercase tracking-wider text-sm mb-4 animate-fade-in">
               Our Process
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
               Engineered for
               <span className="block text-gradient mt-2">Extreme Performance</span>
             </h1>
-            <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8">
+            <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8 animate-slide-up">
               Advanced atomization technologies producing premium metal powders that meet 
               the most stringent demands of defense, aerospace, space, and critical industries. 
               American-made materials designed to excel in extreme conditions.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 animate-slide-up">
               <Button asChild variant="hero" size="lg">
                 <Link to="/powder-inquiry">
                   Request Quote <ArrowRight className="ml-2 h-5 w-5" />
