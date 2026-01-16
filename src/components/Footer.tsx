@@ -19,6 +19,7 @@ const services = [
 ];
 
 const company = [
+  { name: "Process", href: "/process" },
   { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },

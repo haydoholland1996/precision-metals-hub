@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import ProductPage from "./pages/ProductPage";
 import AdditiveManufacturing from "./pages/AdditiveManufacturing";
 import PMHIP from "./pages/PMHIP";
+import Process from "./pages/Process";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/services/pm-hip" element={<PMHIP />} />
           
           {/* Company Pages */}
+          <Route path="/process" element={<Process />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
