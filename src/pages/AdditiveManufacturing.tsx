@@ -286,26 +286,44 @@ const AdditiveManufacturing = () => {
       </section>
 
       {/* SEO Content */}
-      <section className="py-16 bg-background border-t border-border">
+      <section className="py-24 bg-background border-t border-border">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
-              Metal Powder Supply offers comprehensive metal additive manufacturing
-              services for aerospace, defense, and industrial applications. Our
-              industrial metal 3D printing capabilities span all major technologies
-              including EBM, SLM, DMLS, and Binder Jetting.
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Complete Metal AM Capabilities
+            </h2>
+            <p className="text-foreground-secondary max-w-2xl mx-auto">
+              Your trusted partner for aerospace and defense metal 3D printing
             </p>
-            <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
-              As a leading provider of aerospace metal 3D printing and defense
-              additive manufacturing, we specialize in titanium additive
-              manufacturing services and refractory metal processing. Our US
-              additive manufacturing metal capabilities are backed by AS9100D
-              certification and ITAR registration.
-            </p>
-            <p className="text-foreground-secondary text-sm leading-relaxed">
-              Contact us for American metal additive manufacturing with integrated
-              powder supply, HIP post-processing, and full quality certification.
-            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all hover:shadow-glow">
+              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <Layers className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Industrial Metal 3D Printing</h3>
+              <p className="text-foreground-secondary leading-relaxed">
+                Comprehensive metal additive manufacturing services for aerospace, defense, and industrial applications. Our capabilities span all major technologies including EBM, SLM, DMLS, and Binder Jetting.
+              </p>
+            </div>
+            <div className="bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all hover:shadow-glow">
+              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <Plane className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Aerospace & Defense Specialists</h3>
+              <p className="text-foreground-secondary leading-relaxed">
+                We specialize in titanium additive manufacturing and refractory metal processing. Our US manufacturing capabilities are backed by AS9100D certification and ITAR registration for defense applications.
+              </p>
+            </div>
+            <div className="bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all hover:shadow-glow">
+              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <CheckCircle className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Integrated Solutions</h3>
+              <p className="text-foreground-secondary leading-relaxed">
+                American metal additive manufacturing with integrated powder supply, HIP post-processing, and full quality certification. From raw material to finished component under one roof.
+              </p>
+            </div>
           </div>
         </div>
       </section>
