@@ -3,6 +3,14 @@ import { ArrowRight, CheckCircle, Atom, Shield, Plane, Factory } from "lucide-re
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 
+// Import hero images
+import titaniumHero from "@/assets/titanium-hero.jpg";
+import tungstenHero from "@/assets/tungsten-hero.jpg";
+import molybdenumHero from "@/assets/molybdenum-hero.jpg";
+import tantalumHero from "@/assets/tantalum-hero.jpg";
+import niobiumHero from "@/assets/niobium-hero.jpg";
+import c103Hero from "@/assets/c103-hero.jpg";
+
 interface MetalData {
   name: string;
   symbol: string;
@@ -11,6 +19,7 @@ interface MetalData {
   applications: string[];
   seoContent: string[];
   keywords: string[];
+  heroImage: string;
 }
 
 const metalData: Record<string, MetalData> = {
@@ -18,6 +27,7 @@ const metalData: Record<string, MetalData> = {
     name: "Titanium",
     symbol: "Ti",
     fullName: "Titanium Powder",
+    heroImage: titaniumHero,
     description:
       "High-strength, lightweight titanium powder for aerospace, defense, and medical applications. Our Ti-6Al-4V and pure titanium powders are optimized for additive manufacturing and PM-HIP processing.",
     applications: [
@@ -46,6 +56,7 @@ const metalData: Record<string, MetalData> = {
     name: "Tungsten",
     symbol: "W",
     fullName: "Tungsten Powder",
+    heroImage: tungstenHero,
     description:
       "Ultra-high density tungsten powder for defense, aerospace, and industrial applications. Our tungsten powders offer exceptional performance in high-temperature and radiation shielding applications.",
     applications: [
@@ -74,6 +85,7 @@ const metalData: Record<string, MetalData> = {
     name: "Molybdenum",
     symbol: "Mo",
     fullName: "Molybdenum Powder",
+    heroImage: molybdenumHero,
     description:
       "High-performance molybdenum powder for high-temperature applications, aerospace components, and advanced manufacturing. Excellent thermal conductivity and oxidation resistance.",
     applications: [
@@ -99,6 +111,7 @@ const metalData: Record<string, MetalData> = {
     name: "Tantalum",
     symbol: "Ta",
     fullName: "Tantalum Powder",
+    heroImage: tantalumHero,
     description:
       "Corrosion-resistant tantalum powder for medical, chemical processing, and defense applications. Exceptional biocompatibility and chemical resistance.",
     applications: [
@@ -124,6 +137,7 @@ const metalData: Record<string, MetalData> = {
     name: "Niobium",
     symbol: "Nb",
     fullName: "Niobium Powder",
+    heroImage: niobiumHero,
     description:
       "High-purity niobium powder for superconducting applications, aerospace, and advanced manufacturing. Excellent ductility and superconducting properties.",
     applications: [
@@ -149,6 +163,7 @@ const metalData: Record<string, MetalData> = {
     name: "C103",
     symbol: "C103",
     fullName: "C103 Alloy Powder",
+    heroImage: c103Hero,
     description:
       "Aerospace-grade C103 niobium alloy powder for rocket nozzles and high-temperature applications. Exceptional strength-to-weight ratio at elevated temperatures.",
     applications: [
@@ -175,33 +190,80 @@ const ProductPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="container relative z-10">
+      <section className="relative min-h-[70vh] flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${metal.heroImage})` }}
+        />
+        <div className="absolute inset-0 hero-gradient" />
+        
+        <div className="container relative z-10 py-20">
           <div className="max-w-4xl">
-            <div className="flex items-center gap-4 mb-6">
-              <span className="text-7xl md:text-8xl font-bold text-primary">
+            <div className="flex items-center gap-6 mb-6 animate-fade-in">
+              <span className="text-8xl md:text-9xl font-bold text-primary drop-shadow-lg">
                 {metal.symbol}
               </span>
+              <span className="text-primary font-medium uppercase tracking-wider text-sm">
+                Metal Powder
+              </span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">{metal.fullName}</h1>
-            <p className="text-lg text-foreground-secondary max-w-2xl mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
+              {metal.name}
+              <span className="block text-gradient mt-2">Powder</span>
+            </h1>
+            <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8 animate-slide-up">
               {metal.description}
             </p>
-            <Button asChild size="lg">
-              <Link to="/powder-inquiry">
-                Request Quote <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-wrap gap-4 animate-slide-up">
+              <Button asChild variant="hero" size="lg">
+                <Link to="/powder-inquiry">
+                  Request Quote <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="heroOutline" size="lg">
+                <Link to="/services/additive-manufacturing">
+                  Explore Manufacturing
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="bg-background-secondary border-y border-border">
+        <div className="container py-6">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 text-sm">
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">AS9100D Certified</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">ISO 9001:2015</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">ITAR Registered</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <img
+                src="https://flagcdn.com/w20/us.png"
+                alt="USA Flag"
+                className="w-5 h-auto"
+              />
+              <span className="font-medium text-foreground">Produced in USA</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Key Specifications */}
-      <section className="py-16 bg-background-secondary">
+      <section className="py-16 bg-background">
         <div className="container">
+          <h2 className="text-2xl font-bold mb-8 text-center">Key Specifications</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-card rounded-lg p-6 border border-border">
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
               <h3 className="font-semibold text-foreground mb-2">
                 Particle Size
               </h3>
@@ -209,19 +271,19 @@ const ProductPage = () => {
                 Custom PSDs available
               </p>
             </div>
-            <div className="bg-card rounded-lg p-6 border border-border">
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
               <h3 className="font-semibold text-foreground mb-2">
                 Minimum Order
               </h3>
               <p className="text-foreground-secondary text-sm">1000kg</p>
             </div>
-            <div className="bg-card rounded-lg p-6 border border-border">
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
               <h3 className="font-semibold text-foreground mb-2">Lead Time</h3>
               <p className="text-foreground-secondary text-sm">
                 Fast / Expedited available
               </p>
             </div>
-            <div className="bg-card rounded-lg p-6 border border-border">
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
               <h3 className="font-semibold text-foreground mb-2">Origin</h3>
               <p className="text-foreground-secondary text-sm flex items-center gap-2">
                 <img
@@ -233,19 +295,11 @@ const ProductPage = () => {
               </p>
             </div>
           </div>
-
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-foreground-muted">
-            <span className="font-medium">AS9100D</span>
-            <span className="text-border">|</span>
-            <span className="font-medium">ISO 9001:2015</span>
-            <span className="text-border">|</span>
-            <span className="font-medium">ITAR Registered</span>
-          </div>
         </div>
       </section>
 
       {/* Applications */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-background-secondary">
         <div className="container">
           <h2 className="text-3xl font-bold mb-12">
             {metal.name} Powder Applications
@@ -254,7 +308,7 @@ const ProductPage = () => {
             {metal.applications.map((application) => (
               <div
                 key={application}
-                className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border"
+                className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors"
               >
                 <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-foreground">{application}</span>
@@ -265,7 +319,7 @@ const ProductPage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-background-secondary">
+      <section className="py-24 bg-background">
         <div className="container">
           <h2 className="text-3xl font-bold mb-12 text-center">
             Why Choose Metal Powder Supply
@@ -312,7 +366,7 @@ const ProductPage = () => {
       </section>
 
       {/* SEO Content */}
-      <section className="py-16 bg-background border-t border-border">
+      <section className="py-16 bg-background-secondary border-t border-border">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             {metal.seoContent.map((paragraph, index) => (
@@ -328,7 +382,7 @@ const ProductPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-background-secondary">
+      <section className="py-24 bg-background">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
