@@ -318,28 +318,49 @@ const PMHIP = () => {
       </section>
 
       {/* SEO Content */}
-      <section className="py-16 bg-background border-t border-border">
+      <section className="py-24 bg-background border-t border-border">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
-              Metal Powder Supply is a leading US PM-HIP manufacturer offering
-              comprehensive hot isostatic pressing services for aerospace, defense,
-              and industrial applications. Our powder metallurgy HIP manufacturing
-              produces defect-free, fully dense components with forge-like
-              properties.
-            </p>
-            <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
-              As specialists in HIP metal parts manufacturing, we process titanium
-              PM-HIP, tungsten PM-HIP, and all refractory metals. Our HIP titanium
-              aerospace components meet the strictest quality requirements with
-              AS9100D certification and ITAR registration.
-            </p>
-            <p className="text-foreground-secondary text-sm leading-relaxed">
-              We also offer additive manufacturing HIP and HIP post processing for
-              3D printed metal parts. Contact us for AM + HIP manufacturing
-              solutions with integrated powder supply and full quality
-              certification.
-            </p>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+              Industry-Leading PM-HIP Manufacturing
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Factory className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-lg mb-3">US PM-HIP Leader</h3>
+                <p className="text-foreground-secondary text-sm leading-relaxed">
+                  Metal Powder Supply is a leading US PM-HIP manufacturer offering
+                  comprehensive hot isostatic pressing services for aerospace, defense,
+                  and industrial applications. Our powder metallurgy HIP manufacturing
+                  produces defect-free, fully dense components with forge-like properties.
+                </p>
+              </div>
+              <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Shield className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-lg mb-3">Refractory Metal Specialists</h3>
+                <p className="text-foreground-secondary text-sm leading-relaxed">
+                  As specialists in HIP metal parts manufacturing, we process titanium
+                  PM-HIP, tungsten PM-HIP, and all refractory metals. Our HIP titanium
+                  aerospace components meet the strictest quality requirements with
+                  AS9100D certification and ITAR registration.
+                </p>
+              </div>
+              <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Zap className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-lg mb-3">AM + HIP Integration</h3>
+                <p className="text-foreground-secondary text-sm leading-relaxed">
+                  We also offer additive manufacturing HIP and HIP post processing for
+                  3D printed metal parts. Contact us for AM + HIP manufacturing
+                  solutions with integrated powder supply and full quality certification.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
