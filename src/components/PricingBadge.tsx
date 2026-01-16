@@ -1,9 +1,10 @@
 import { Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PricingBadge = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
-      <div className="relative group cursor-pointer">
+      <Link to="/powder-inquiry" className="relative group block">
         {/* Glow effect */}
         <div className="absolute inset-0 bg-primary/30 rounded-full blur-xl group-hover:bg-primary/50 transition-all duration-300" />
         
@@ -14,7 +15,7 @@ const PricingBadge = () => {
             Let us beat your current pricing!
           </span>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
