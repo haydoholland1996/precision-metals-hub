@@ -105,8 +105,8 @@ const PMHIP = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
-              PM-HIP Manufacturing
-              <span className="block text-gradient mt-2">Services</span>
+              PM-HIP
+              <span className="block text-gradient mt-2">Manufacturing</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8 animate-slide-up">
               Powder Metallurgy – Hot Isostatic Pressing for near-net-shape
