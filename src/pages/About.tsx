@@ -1,21 +1,13 @@
 import { Link } from "react-router-dom";
-import { Factory, Shield, Clock, Users, CheckCircle, Handshake, TrendingDown, Award, ArrowRight, Target, Atom } from "lucide-react";
+import { Shield, Clock, Users, CheckCircle, Handshake, TrendingDown, Award, ArrowRight, Atom } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import PricingBadge from "@/components/PricingBadge";
-import facilityHero from "@/assets/facility-hero.jpg";
 
 const certifications = [
   { name: "AS9100D", description: "Aerospace Quality Management" },
   { name: "ISO 9001:2015", description: "Quality Management System" },
   { name: "ITAR Registered", description: "Defense Trade Controls" },
-];
-
-const stats = [
-  { value: "300kg", label: "Minimum Order" },
-  { value: "24hr", label: "Quote Response" },
-  { value: "100%", label: "US Produced" },
-  { value: "6+", label: "Metal Types" },
 ];
 
 const pillars = [
@@ -62,58 +54,6 @@ const partnershipBenefits = [
 const About = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${facilityHero})` }}
-        />
-        <div className="absolute inset-0 hero-gradient" />
-        
-        <div className="container relative z-10 py-20">
-          <div className="max-w-4xl">
-            <span className="inline-block text-primary font-medium uppercase tracking-wider text-sm mb-4 animate-fade-in">
-              About Metal Powder Supply
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
-              American Metal Powder
-              <span className="block text-gradient mt-2">Excellence</span>
-            </h1>
-            <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8 animate-slide-up">
-              Your trusted US source for strategic metal powders and advanced
-              manufacturing. Serving aerospace, defense, and critical industries
-              with American-produced materials.
-            </p>
-            <div className="flex flex-wrap gap-4 animate-slide-up">
-              <Button asChild variant="hero" size="lg">
-                <Link to="/powder-inquiry">
-                  Request Quote <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="heroOutline" size="lg">
-                <Link to="/contact">
-                  Contact Us
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Bar */}
-      <section className="bg-background-secondary border-y border-border">
-        <div className="container py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{stat.value}</div>
-                <div className="text-sm text-foreground-secondary">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Our Story */}
       <section className="py-24 bg-background">
         <div className="container">
