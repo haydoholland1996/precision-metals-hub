@@ -164,9 +164,9 @@ const PowderInquiry = () => {
                 </div>
               </div>
 
-              {/* Powder Selection */}
+              {/* Material Selection */}
               <div className="space-y-2">
-                <Label>Powder Selection *</Label>
+                <Label>Material Selection *</Label>
                 <Select name="powder" required>
                   <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select a powder type" />
