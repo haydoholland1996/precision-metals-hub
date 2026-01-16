@@ -11,11 +11,13 @@ import molybdenumHero from "@/assets/molybdenum-hero.jpg";
 import tantalumHero from "@/assets/tantalum-hero.jpg";
 import niobiumHero from "@/assets/niobium-hero.jpg";
 import c103Hero from "@/assets/c103-hero.jpg";
+import whaRodsHero from "@/assets/wha-rods-hero.jpg";
 
 interface MetalData {
   name: string;
   symbol: string;
   fullName: string;
+  productType: string;
   description: string;
   applications: string[];
   seoContent: string[];
@@ -28,6 +30,7 @@ const metalData: Record<string, MetalData> = {
     name: "Titanium",
     symbol: "Ti",
     fullName: "Titanium Powder",
+    productType: "Powder",
     heroImage: titaniumHero,
     description:
       "High-strength, lightweight titanium powder for aerospace, defense, and medical applications. Our Ti-6Al-4V and pure titanium powders are optimized for additive manufacturing and PM-HIP processing.",
@@ -57,6 +60,7 @@ const metalData: Record<string, MetalData> = {
     name: "Tungsten",
     symbol: "W",
     fullName: "Tungsten Powder",
+    productType: "Powder",
     heroImage: tungstenHero,
     description:
       "Ultra-high density tungsten powder for defense, aerospace, and industrial applications. Our tungsten powders offer exceptional performance in high-temperature and radiation shielding applications.",
@@ -86,6 +90,7 @@ const metalData: Record<string, MetalData> = {
     name: "Molybdenum",
     symbol: "Mo",
     fullName: "Molybdenum Powder",
+    productType: "Powder",
     heroImage: molybdenumHero,
     description:
       "High-performance molybdenum powder for high-temperature applications, aerospace components, and advanced manufacturing. Excellent thermal conductivity and oxidation resistance.",
@@ -112,6 +117,7 @@ const metalData: Record<string, MetalData> = {
     name: "Tantalum",
     symbol: "Ta",
     fullName: "Tantalum Powder",
+    productType: "Powder",
     heroImage: tantalumHero,
     description:
       "Corrosion-resistant tantalum powder for medical, chemical processing, and defense applications. Exceptional biocompatibility and chemical resistance.",
@@ -138,6 +144,7 @@ const metalData: Record<string, MetalData> = {
     name: "Niobium",
     symbol: "Nb",
     fullName: "Niobium Powder",
+    productType: "Powder",
     heroImage: niobiumHero,
     description:
       "High-purity niobium powder for superconducting applications, aerospace, and advanced manufacturing. Excellent ductility and superconducting properties.",
@@ -164,6 +171,7 @@ const metalData: Record<string, MetalData> = {
     name: "C103",
     symbol: "C103",
     fullName: "C103 Alloy Powder",
+    productType: "Powder",
     heroImage: c103Hero,
     description:
       "Aerospace-grade C103 niobium alloy powder for rocket nozzles and high-temperature applications. Exceptional strength-to-weight ratio at elevated temperatures.",
@@ -181,6 +189,40 @@ const metalData: Record<string, MetalData> = {
       "Contact us for C103 alloy powder sourcing with technical support and competitive pricing for your aerospace propulsion requirements.",
     ],
     keywords: ["C103 alloy powder supplier"],
+  },
+  "tungsten-heavy-alloy-rods": {
+    name: "WHA Rods",
+    symbol: "WHA",
+    fullName: "Tungsten Heavy Alloy Rods & Bars",
+    productType: "Rods & Bars",
+    heroImage: whaRodsHero,
+    description:
+      "High-density tungsten heavy alloy (WHA) rods and bars for defense, aerospace, medical, and industrial applications. Superior density (17.0-18.5 g/cm³), excellent machinability, and outstanding radiation shielding properties.",
+    applications: [
+      "Kinetic energy penetrators",
+      "Counterweights and balancing",
+      "Radiation shielding",
+      "Vibration dampening",
+      "Medical collimators",
+      "Aerospace ballast",
+      "Oil and gas drilling",
+      "Sporting goods weights",
+    ],
+    seoContent: [
+      "Metal Powder Supply is a leading tungsten heavy alloy supplier in the USA, providing precision WHA rods and bars for defense, aerospace, and industrial applications. Our tungsten heavy alloy rods meet ASTM B777 specifications with densities ranging from 17.0 to 18.5 g/cm³.",
+      "We offer custom tungsten alloy bars in various compositions including W-Ni-Fe and W-Ni-Cu alloys. As a trusted tungsten heavy alloy manufacturer, we provide full material certification, lot traceability, and ITAR compliance for defense applications.",
+      "Contact us for tungsten heavy alloy rod sourcing with competitive pricing and fast lead times. Our metallurgical team provides expert guidance on WHA grade selection for your specific application requirements.",
+    ],
+    keywords: [
+      "tungsten heavy alloy supplier",
+      "WHA rods supplier",
+      "tungsten alloy bars",
+      "tungsten heavy alloy manufacturer USA",
+      "ASTM B777 tungsten alloy",
+      "tungsten alloy counterweights",
+      "tungsten radiation shielding",
+      "defense tungsten alloy",
+    ],
   },
 };
 
@@ -207,7 +249,7 @@ const ProductPage = () => {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
               {metal.name}
-              <span className="block text-gradient mt-2">Powder</span>
+              <span className="block text-gradient mt-2">{metal.productType}</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8 animate-slide-up">
               {metal.description}

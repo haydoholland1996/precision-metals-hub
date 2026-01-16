@@ -17,6 +17,7 @@ const products = [
   { name: "Tantalum Powder", href: "/products/tantalum-powder", symbol: "Ta" },
   { name: "Niobium Powder", href: "/products/niobium-powder", symbol: "Nb" },
   { name: "C103 Alloy Powder", href: "/products/c103-alloy-powder", symbol: "C103" },
+  { name: "WHA Rods & Bars", href: "/products/tungsten-heavy-alloy-rods", symbol: "WHA" },
 ];
 
 const services = [
