@@ -77,9 +77,9 @@ const Index = () => {
         <div className="container relative z-10 py-20">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
-              Your Partner for Mission-Critical Metal Powders
+              Your Partner for Mission-Critical
               <span className="block text-gradient mt-2">
-                and Advanced Manufacturing
+                Metal Powders & Advanced Manufacturing
               </span>
             </h1>
             <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8 animate-slide-up">
