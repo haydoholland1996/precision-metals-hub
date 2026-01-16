@@ -25,6 +25,15 @@ const powders = [
   { value: "other", label: "Other" },
 ];
 
+const frequencies = [
+  { value: "one-time", label: "One-time order" },
+  { value: "monthly", label: "Monthly" },
+  { value: "quarterly", label: "Quarterly" },
+  { value: "bi-annually", label: "Bi-annually" },
+  { value: "annually", label: "Annually" },
+  { value: "other", label: "Other" },
+];
+
 const timelines = [
   { value: "immediate", label: "Immediate (< 2 weeks)" },
   { value: "short", label: "Short-term (2-4 weeks)" },
@@ -201,6 +210,23 @@ const PowderInquiry = () => {
                     className="bg-background border-border"
                   />
                 </div>
+              </div>
+
+              {/* Order Frequency */}
+              <div className="space-y-2">
+                <Label>Order Frequency</Label>
+                <Select name="frequency">
+                  <SelectTrigger className="bg-background border-border">
+                    <SelectValue placeholder="How often do you need this?" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-card border-border">
+                    {frequencies.map((freq) => (
+                      <SelectItem key={freq.value} value={freq.value}>
+                        {freq.label}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
 
               {/* PSD */}
