@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import pmhipHero from "@/assets/pmhip-hero.jpg";
 
 const benefits = [
   "Custom-engineered near-net-shape components",
@@ -86,28 +87,72 @@ const PMHIP = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="container relative z-10">
+      <section className="relative min-h-[70vh] flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${pmhipHero})` }}
+        />
+        <div className="absolute inset-0 hero-gradient" />
+        
+        <div className="container relative z-10 py-20">
           <div className="max-w-4xl">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center">
-                <FlaskConical className="h-7 w-7 text-primary" />
+            <div className="flex items-center gap-4 mb-6 animate-fade-in">
+              <div className="h-16 w-16 rounded-lg bg-primary/20 backdrop-blur-sm flex items-center justify-center border border-primary/30">
+                <FlaskConical className="h-8 w-8 text-primary" />
               </div>
+              <span className="text-primary font-medium uppercase tracking-wider text-sm">
+                Advanced Manufacturing
+              </span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              PM-HIP Manufacturing Services
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
+              PM-HIP Manufacturing
+              <span className="block text-gradient mt-2">Services</span>
             </h1>
-            <p className="text-lg text-foreground-secondary max-w-2xl mb-8">
+            <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8 animate-slide-up">
               Powder Metallurgy – Hot Isostatic Pressing for near-net-shape
               components with forge-like properties. Defect-free, fully dense parts
               for mission-critical applications.
             </p>
-            <Button asChild size="lg">
-              <Link to="/service-inquiry">
-                Discuss Your Project <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-wrap gap-4 animate-slide-up">
+              <Button asChild variant="hero" size="lg">
+                <Link to="/service-inquiry">
+                  Discuss Your Project <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="heroOutline" size="lg">
+                <Link to="/powder-inquiry">
+                  Request Powder Quote
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="bg-background-secondary border-y border-border">
+        <div className="container py-6">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 text-sm">
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">AS9100D Certified</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">ISO 9001:2015</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">ITAR Registered</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <img
+                src="https://flagcdn.com/w20/us.png"
+                alt="USA Flag"
+                className="w-5 h-auto"
+              />
+              <span className="font-medium text-foreground">US Manufacturing</span>
+            </div>
           </div>
         </div>
       </section>
