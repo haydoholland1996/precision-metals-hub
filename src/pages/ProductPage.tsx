@@ -12,6 +12,7 @@ import tantalumHero from "@/assets/tantalum-hero.jpg";
 import niobiumHero from "@/assets/niobium-hero.jpg";
 import c103Hero from "@/assets/c103-hero.jpg";
 import whaRodsHero from "@/assets/wha-rods-hero.jpg";
+import refractoryBarPlateHero from "@/assets/refractory-bar-plate-hero.jpg";
 
 interface MetalData {
   name: string;
@@ -222,6 +223,40 @@ const metalData: Record<string, MetalData> = {
       "tungsten alloy counterweights",
       "tungsten radiation shielding",
       "defense tungsten alloy",
+    ],
+  },
+  "refractory-metal-bar-plate": {
+    name: "Refractory Metal",
+    symbol: "Mo Ta Nb W",
+    fullName: "Refractory Metal Bar & Plate",
+    productType: "Bar & Plate",
+    heroImage: refractoryBarPlateHero,
+    description:
+      "High-performance refractory metal stock in plate, sheet, rod, and wire forms. We supply molybdenum (Mo), tantalum (Ta), niobium (Nb), and tungsten (W) for high-temperature, aerospace, medical, and industrial applications.",
+    applications: [
+      "High-temperature furnace components",
+      "Aerospace structural parts",
+      "Medical device manufacturing",
+      "Semiconductor processing",
+      "Glass industry tooling",
+      "Vacuum furnace fixtures",
+      "Chemical processing equipment",
+      "Nuclear applications",
+    ],
+    seoContent: [
+      "Metal Powder Supply is a leading refractory metal supplier in the USA, providing molybdenum plate, tantalum sheet, niobium rod, and tungsten wire for demanding applications. Our refractory metal stock meets strict aerospace and industrial specifications.",
+      "We offer custom sizes and forms including refractory metal plate, sheet, rod, and wire in Mo, Ta, Nb, and W. As a trusted refractory metal manufacturer, we provide full material certification, lot traceability, and ITAR compliance for defense applications.",
+      "Contact us for refractory metal bar and plate sourcing with competitive pricing and fast lead times. Our metallurgical team provides expert guidance on material selection for your specific high-temperature requirements.",
+    ],
+    keywords: [
+      "refractory metal supplier",
+      "molybdenum plate supplier",
+      "tantalum sheet supplier",
+      "niobium rod supplier",
+      "tungsten wire supplier",
+      "refractory metal bar USA",
+      "Mo Ta Nb W stock",
+      "high temperature metal supplier",
     ],
   },
 };
