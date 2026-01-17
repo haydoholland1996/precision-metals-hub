@@ -102,14 +102,6 @@ const Powders = () => {
         
         <div className="container relative z-10 py-20">
           <div className="max-w-4xl">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="h-16 w-16 rounded-lg bg-primary/20 backdrop-blur-sm flex items-center justify-center border border-primary/30">
-                <Atom className="h-8 w-8 text-primary" />
-              </div>
-              <span className="text-primary font-medium uppercase tracking-wider text-sm">
-                Strategic Metal Powders
-              </span>
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Strategic and Refractory Powders
             </h1>
