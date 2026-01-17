@@ -329,47 +329,6 @@ const ProductPage = () => {
         </div>
       </section>
 
-      {/* Key Specifications - only for powder products */}
-      {metal.productType === "Powder" && (
-        <section className="py-16 bg-background">
-          <div className="container">
-            <h2 className="text-2xl font-bold mb-8 text-center">Key Specifications</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-semibold text-foreground mb-2">
-                  Particle Size
-                </h3>
-                <p className="text-foreground-secondary text-sm">
-                  Custom PSDs available
-                </p>
-              </div>
-              <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-semibold text-foreground mb-2">
-                  Minimum Order
-                </h3>
-                <p className="text-foreground-secondary text-sm">300kg</p>
-              </div>
-              <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-semibold text-foreground mb-2">Lead Time</h3>
-                <p className="text-foreground-secondary text-sm">
-                  Fast / Expedited available
-                </p>
-              </div>
-              <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-semibold text-foreground mb-2">Origin</h3>
-                <p className="text-foreground-secondary text-sm flex items-center gap-2">
-                  <img
-                    src="https://flagcdn.com/w20/us.png"
-                    alt="USA"
-                    className="w-4"
-                  />
-                  Produced in USA
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Applications */}
       <section className="py-24 bg-background-secondary">
