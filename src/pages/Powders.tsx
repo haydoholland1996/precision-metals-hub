@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import powdersHero from "@/assets/powder-hero-new.png";
 import facilityFloor from "@/assets/facility-floor.png";
+import sphericalPowderBg from "@/assets/spherical-powder-bg.png";
 
 const powders = [
   {
@@ -327,8 +328,13 @@ const Powders = () => {
       </section>
 
       {/* Powder Morphology */}
-      <section className="py-24 bg-background-secondary">
-        <div className="container">
+      <section className="relative py-24">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${sphericalPowderBg})` }}
+        />
+        <div className="absolute inset-0 bg-background/85" />
+        <div className="container relative z-10">
           <div className="text-center mb-16">
             <span className="text-primary font-medium uppercase tracking-wider text-sm mb-4 block">
               Powder Morphology
