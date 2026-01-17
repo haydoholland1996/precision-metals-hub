@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
-import powdersHero from "@/assets/powders-hero.jpg";
+import powdersHero from "@/assets/powder-hero-new.png";
 
 const powders = [
   {
