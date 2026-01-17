@@ -296,8 +296,8 @@ const ProductPage = () => {
                 </Link>
               </Button>
               <Button asChild variant="heroOutline" size="lg">
-                <Link to="/services/additive-manufacturing">
-                  Explore Manufacturing
+                <Link to="/contact">
+                  Get in Touch
                 </Link>
               </Button>
             </div>
