@@ -333,16 +333,16 @@ const Powders = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${sphericalPowderBg})` }}
         />
-        <div className="absolute inset-0 bg-white/90" />
+        <div className="absolute inset-0 bg-background/85" />
         <div className="container relative z-10">
           <div className="text-center mb-16">
             <span className="text-primary font-medium uppercase tracking-wider text-sm mb-4 block">
               Powder Morphology
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Spherical & Angular Options
             </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto text-lg">
+            <p className="text-foreground-secondary max-w-3xl mx-auto text-lg">
               Different applications demand different powder characteristics. We offer both 
               spherical and angular morphologies to match your manufacturing process.
             </p>
@@ -352,19 +352,19 @@ const Powders = () => {
             {morphologies.map((morph) => (
               <div
                 key={morph.name}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-slate-200 shadow-lg"
+                className="bg-card rounded-2xl p-8 md:p-10 border border-border"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="h-16 w-16 rounded-xl bg-primary/10 flex items-center justify-center">
                     <morph.icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900">{morph.name}</h3>
+                  <h3 className="text-2xl font-bold">{morph.name}</h3>
                 </div>
-                <p className="text-slate-600 text-lg mb-6 leading-relaxed">
+                <p className="text-foreground-secondary text-lg mb-6 leading-relaxed">
                   {morph.description}
                 </p>
                 <div>
-                  <h4 className="font-semibold mb-3 text-slate-800">Ideal Applications:</h4>
+                  <h4 className="font-semibold mb-3 text-foreground">Ideal Applications:</h4>
                   <div className="flex flex-wrap gap-2">
                     {morph.applications.map((app) => (
                       <span
