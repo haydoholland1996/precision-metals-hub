@@ -111,8 +111,7 @@ const Powders = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Premium Metal Powders
-              <span className="block text-gradient mt-2">US-Manufactured</span>
+              Strategic and Refractory Powders
             </h1>
             <p className="text-lg md:text-xl text-foreground-secondary max-w-2xl mb-8">
               High-purity titanium, tungsten, molybdenum, tantalum, niobium, and C103 alloy 
@@ -169,15 +168,6 @@ const Powders = () => {
       {/* Powders Grid */}
       <section className="py-24 bg-background">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Strategic & Refractory Metal Powders
-            </h2>
-            <p className="text-foreground-secondary max-w-2xl mx-auto text-lg">
-              Premium quality metal powders optimized for additive manufacturing, 
-              powder metallurgy, and hot isostatic pressing applications.
-            </p>
-          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {powders.map((powder) => (
@@ -194,16 +184,6 @@ const Powders = () => {
                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                       {powder.fullName}
                     </h3>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {powder.applications.map((app) => (
-                        <span
-                          key={app}
-                          className="text-xs px-2 py-1 bg-background-secondary rounded-full text-foreground-secondary"
-                        >
-                          {app}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
                 <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
@@ -248,8 +228,13 @@ const Powders = () => {
       </section>
 
       {/* Industries */}
-      <section className="py-24 bg-background">
-        <div className="container">
+      <section className="relative py-24">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${powdersHero})` }}
+        />
+        <div className="absolute inset-0 bg-background/90" />
+        <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -315,28 +300,28 @@ const Powders = () => {
             </h2>
             <div className="space-y-6 text-foreground-secondary text-lg leading-relaxed">
               <p>
-                Metal Powder Supply is a premier <strong className="text-foreground">US titanium powder supplier</strong> and 
-                <strong className="text-foreground"> refractory metal powder manufacturer</strong>, serving the aerospace, defense, 
+                Metal Powder Supply is a premier US titanium powder supplier and 
+                refractory metal powder manufacturer, serving the aerospace, defense, 
                 energy, and medical industries. Our American-produced strategic metal powders meet the highest quality standards, 
                 with AS9100D and ISO 9001:2015 certifications ensuring consistent excellence.
               </p>
               <p>
-                As a leading <strong className="text-foreground">tungsten powder supplier</strong> and <strong className="text-foreground">molybdenum powder manufacturer</strong>, 
+                As a leading tungsten powder supplier and molybdenum powder manufacturer, 
                 we offer custom particle size distributions optimized for your specific application. Whether you need 
-                <strong className="text-foreground"> titanium powder for additive manufacturing</strong>, <strong className="text-foreground">tantalum powder for chemical processing</strong>, 
-                or <strong className="text-foreground">niobium powder for superconducting applications</strong>, we deliver premium quality with full material certification.
+                titanium powder for additive manufacturing, tantalum powder for chemical processing, 
+                or niobium powder for superconducting applications, we deliver premium quality with full material certification.
               </p>
               <p>
-                Our advanced atomization technologies—including <strong className="text-foreground">EIGA (Electrode Induction Gas Atomization)</strong> and 
-                <strong className="text-foreground"> microwave plasma atomization</strong>—produce exceptionally pure, spherical powders ideal for 
+                Our advanced atomization technologies—including EIGA (Electrode Induction Gas Atomization) and 
+                microwave plasma atomization—produce exceptionally pure, spherical powders ideal for 
                 demanding applications. With minimum order quantities of 300kg and expedited lead times available, 
                 Metal Powder Supply is your partner for high-volume, mission-critical powder requirements.
               </p>
               <p>
                 ITAR-registered and committed to domestic supply chain security, we're the trusted choice for 
-                <strong className="text-foreground"> defense-grade metal powders</strong> and <strong className="text-foreground">aerospace-certified materials</strong>. 
-                Contact us today for a quote on <strong className="text-foreground">C103 alloy powder</strong>, 
-                <strong className="text-foreground"> tungsten heavy alloy powder</strong>, or any of our strategic metal powder products.
+                defense-grade metal powders and aerospace-certified materials. 
+                Contact us today for a quote on C103 alloy powder, 
+                tungsten heavy alloy powder, or any of our strategic metal powder products.
               </p>
             </div>
           </div>
