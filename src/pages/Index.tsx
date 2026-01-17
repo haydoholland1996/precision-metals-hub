@@ -117,10 +117,6 @@ const Index = () => {
               <span className="font-medium text-foreground">ISO 9001:2015</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span className="font-medium text-foreground">ITAR Registered</span>
-            </div>
-            <div className="flex items-center gap-2">
               <img
                 src="https://flagcdn.com/w20/us.png"
                 alt="USA Flag"

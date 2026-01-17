@@ -7,7 +7,6 @@ import PricingBadge from "@/components/PricingBadge";
 const certifications = [
   { name: "AS9100D", description: "Aerospace Quality Management" },
   { name: "ISO 9001:2015", description: "Quality Management System" },
-  { name: "ITAR Registered", description: "Defense Trade Controls" },
 ];
 
 const pillars = [
@@ -73,7 +72,7 @@ const About = () => {
                 </p>
                 <p>
                   Our focus on US-based production ensures complete supply chain
-                  visibility and ITAR compliance for defense applications. We work
+                  visibility for defense applications. We work
                   closely with aerospace, defense, energy, and medical customers who
                   require materials that meet the highest standards.
                 </p>
@@ -183,7 +182,7 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Proudly Produced in the USA</h2>
               <p className="text-foreground-secondary text-lg mb-8 max-w-2xl mx-auto">
                 All our metal powders are produced domestically, ensuring complete
-                supply chain visibility, ITAR compliance, and support for American
+                supply chain visibility and support for American
                 manufacturing. When you partner with Metal Powder Supply, you're
                 choosing American quality and reliability.
               </p>

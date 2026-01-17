@@ -130,10 +130,6 @@ const AdditiveManufacturing = () => {
               <span className="font-medium text-foreground">ISO 9001:2015</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span className="font-medium text-foreground">ITAR Registered</span>
-            </div>
-            <div className="flex items-center gap-2">
               <img
                 src="https://flagcdn.com/w20/us.png"
                 alt="USA Flag"
@@ -260,7 +256,7 @@ const AdditiveManufacturing = () => {
               </div>
               <h3 className="font-semibold mb-2">Certified Network</h3>
               <p className="text-foreground-secondary text-sm">
-                AS9100D, ISO 9001:2015, ITAR registered
+                AS9100D, ISO 9001:2015 certified
               </p>
             </div>
             <div className="text-center">
@@ -312,7 +308,7 @@ const AdditiveManufacturing = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Aerospace & Defense Specialists</h3>
               <p className="text-foreground-secondary leading-relaxed">
-                We specialize in titanium additive manufacturing and refractory metal processing. Our US manufacturing capabilities are backed by AS9100D certification and ITAR registration for defense applications.
+                We specialize in titanium additive manufacturing and refractory metal processing. Our US manufacturing capabilities are backed by AS9100D certification for defense applications.
               </p>
             </div>
             <div className="bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all hover:shadow-glow">

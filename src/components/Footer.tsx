@@ -139,8 +139,6 @@ const Footer = () => {
             <span className="font-medium">AS9100D</span>
             <span className="text-border">|</span>
             <span className="font-medium">ISO 9001:2015</span>
-            <span className="text-border">|</span>
-            <span className="font-medium">ITAR Registered</span>
           </div>
         </div>
 
