@@ -83,7 +83,6 @@ const morphologies = [
 const differentiators = [
   "US-based production with complete supply chain visibility",
   "AS9100D and ISO 9001:2015 certified manufacturing",
-  "ITAR registered for defense applications",
   "Custom alloy development capabilities",
   "Rapid prototyping to production scale-up",
   "Integrated additive manufacturing and PM-HIP services",

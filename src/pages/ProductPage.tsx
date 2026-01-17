@@ -46,7 +46,7 @@ const metalData: Record<string, MetalData> = {
     seoContent: [
       "Metal Powder Supply is a premier US titanium powder supplier, offering aerospace-grade titanium powder for the most demanding applications. Our titanium powder for additive manufacturing meets strict aerospace and medical specifications, with custom particle size distributions available.",
       "As a leading titanium powder manufacturer, we supply Ti-6Al-4V powder and commercially pure titanium for EBM, SLM, and DMLS processes. Our titanium powder HIP-grade materials deliver exceptional density and mechanical properties.",
-      "With ITAR registration and AS9100D certification, we're your trusted partner for defense and aerospace titanium powder sourcing. Contact us for titanium powder aerospace grade materials with fast lead times.",
+      "With AS9100D certification, we're your trusted partner for defense and aerospace titanium powder sourcing. Contact us for titanium powder aerospace grade materials with fast lead times.",
     ],
     keywords: [
       "titanium powder supplier",
@@ -132,7 +132,7 @@ const metalData: Record<string, MetalData> = {
     ],
     seoContent: [
       "As a specialized tantalum powder supplier, Metal Powder Supply provides high-purity tantalum for medical and defense applications. Our tantalum powder additive manufacturing grades meet strict biocompatibility requirements.",
-      "We offer tantalum powder defense applications with ITAR compliance and full material traceability. Custom particle size distributions available for your specific manufacturing process.",
+      "We offer tantalum powder defense applications with full material traceability. Custom particle size distributions available for your specific manufacturing process.",
       "Contact our team for tantalum powder sourcing with technical support and competitive pricing.",
     ],
     keywords: [
@@ -186,7 +186,7 @@ const metalData: Record<string, MetalData> = {
     ],
     seoContent: [
       "Metal Powder Supply is your source for C103 alloy powder, the premier niobium alloy for rocket propulsion and aerospace applications. Our C103 powder is optimized for additive manufacturing and PM-HIP processing.",
-      "We provide C103 alloy powder with custom particle size distributions and full material traceability. ITAR registered and AS9100D certified for defense and space applications.",
+      "We provide C103 alloy powder with custom particle size distributions and full material traceability. AS9100D certified for defense and space applications.",
       "Contact us for C103 alloy powder sourcing with technical support and competitive pricing for your aerospace propulsion requirements.",
     ],
     keywords: ["C103 alloy powder supplier"],
@@ -211,7 +211,7 @@ const metalData: Record<string, MetalData> = {
     ],
     seoContent: [
       "Metal Powder Supply is a leading tungsten heavy alloy supplier in the USA, providing precision WHA rods and bars for defense, aerospace, and industrial applications. Our tungsten heavy alloy rods meet ASTM B777 specifications with densities ranging from 17.0 to 18.5 g/cm³.",
-      "We offer custom tungsten alloy bars in various compositions including W-Ni-Fe and W-Ni-Cu alloys. As a trusted tungsten heavy alloy manufacturer, we provide full material certification, lot traceability, and ITAR compliance for defense applications.",
+      "We offer custom tungsten alloy bars in various compositions including W-Ni-Fe and W-Ni-Cu alloys. As a trusted tungsten heavy alloy manufacturer, we provide full material certification and lot traceability for defense applications.",
       "Contact us for tungsten heavy alloy rod sourcing with competitive pricing and fast lead times. Our metallurgical team provides expert guidance on WHA grade selection for your specific application requirements.",
     ],
     keywords: [
@@ -245,7 +245,7 @@ const metalData: Record<string, MetalData> = {
     ],
     seoContent: [
       "Metal Powder Supply is a leading refractory metal supplier in the USA, providing molybdenum plate, tantalum sheet, niobium rod, and tungsten wire for demanding applications. Our refractory metal stock meets strict aerospace and industrial specifications.",
-      "We offer custom sizes and forms including refractory metal plate, sheet, rod, and wire in Mo, Ta, Nb, and W. As a trusted refractory metal manufacturer, we provide full material certification, lot traceability, and ITAR compliance for defense applications.",
+      "We offer custom sizes and forms including refractory metal plate, sheet, rod, and wire in Mo, Ta, Nb, and W. As a trusted refractory metal manufacturer, we provide full material certification and lot traceability for defense applications.",
       "Contact us for refractory metal bar and plate sourcing with competitive pricing and fast lead times. Our metallurgical team provides expert guidance on material selection for your specific high-temperature requirements.",
     ],
     keywords: [
@@ -316,10 +316,6 @@ const ProductPage = () => {
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-primary" />
               <span className="font-medium text-foreground">ISO 9001:2015</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span className="font-medium text-foreground">ITAR Registered</span>
             </div>
             <div className="flex items-center gap-2">
               <img

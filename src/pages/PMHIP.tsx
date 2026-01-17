@@ -142,10 +142,6 @@ const PMHIP = () => {
               <span className="font-medium text-foreground">ISO 9001:2015</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span className="font-medium text-foreground">ITAR Registered</span>
-            </div>
-            <div className="flex items-center gap-2">
               <img
                 src="https://flagcdn.com/w20/us.png"
                 alt="USA Flag"
@@ -292,7 +288,7 @@ const PMHIP = () => {
               </div>
               <h3 className="font-semibold mb-2">Certified Network</h3>
               <p className="text-foreground-secondary text-sm">
-                AS9100D, ISO 9001:2015, ITAR registered
+                AS9100D, ISO 9001:2015 certified
               </p>
             </div>
             <div className="text-center">
@@ -346,7 +342,7 @@ const PMHIP = () => {
                   As specialists in HIP metal parts manufacturing, we process titanium
                   PM-HIP, tungsten PM-HIP, and all refractory metals. Our HIP titanium
                   aerospace components meet the strictest quality requirements with
-                  AS9100D certification and ITAR registration.
+                  AS9100D certification.
                 </p>
               </div>
               <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
