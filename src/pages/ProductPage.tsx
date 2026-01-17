@@ -404,7 +404,7 @@ const ProductPage = () => {
               </div>
               <h3 className="font-semibold mb-2">US Production</h3>
               <p className="text-foreground-secondary text-sm">
-                American-made materials with full domestic supply chain
+                American-made materials produced in the USA
               </p>
             </div>
             <div className="text-center">
