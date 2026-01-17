@@ -19,6 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import powdersHero from "@/assets/powder-hero-new.png";
+import facilityFloor from "@/assets/facility-floor.png";
 
 const powders = [
   {
@@ -131,7 +132,6 @@ const morphologies = [
 const differentiators = [
   "US-based production with complete supply chain visibility",
   "AS9100D and ISO 9001:2015 certified manufacturing",
-  "ITAR registered for defense applications",
   "Custom alloy development capabilities",
   "Rapid prototyping to production scale-up",
   "Integrated additive manufacturing and PM-HIP services",
@@ -195,10 +195,6 @@ const Powders = () => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-primary" />
-              <span className="font-medium text-foreground">ITAR Registered</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
               <span className="font-medium text-foreground">300kg MOQ</span>
             </div>
             <div className="flex items-center gap-2">
@@ -246,8 +242,13 @@ const Powders = () => {
       </section>
 
       {/* Powder Quality */}
-      <section className="py-24 bg-background-secondary">
-        <div className="container">
+      <section className="relative py-24">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${facilityFloor})` }}
+        />
+        <div className="absolute inset-0 bg-background/85" />
+        <div className="container relative z-10">
           <div className="text-center mb-16">
             <span className="text-primary font-medium uppercase tracking-wider text-sm mb-4 block">
               Uncompromising Quality
@@ -508,7 +509,7 @@ const Powders = () => {
                 Metal Powder Supply is your partner for high-volume, mission-critical powder requirements.
               </p>
               <p>
-                ITAR-registered and committed to domestic supply chain security, we're the trusted choice for 
+                Committed to domestic supply chain security, we're the trusted choice for 
                 defense-grade metal powders and aerospace-certified materials. 
                 Contact us today for a quote on C103 alloy powder, 
                 tungsten heavy alloy powder, or any of our strategic metal powder products.
