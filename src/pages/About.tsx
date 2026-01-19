@@ -13,7 +13,7 @@ const certifications = [
 const pillars = [
   {
     title: "Uncompromising Quality",
-    description: "Every batch undergoes rigorous testing and certification. Our AS9100D and ISO 9001:2015 certified processes ensure consistent, aerospace-grade materials.",
+    description: "Every batch undergoes rigorous testing and certification. AS9100D and ISO 9001:2015 certified processes ensure consistent, aerospace-grade materials.",
     icon: Shield,
   },
   {
