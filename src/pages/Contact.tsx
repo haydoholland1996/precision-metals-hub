@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 
@@ -30,19 +30,6 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-8">Get in Touch</h2>
               <div className="space-y-6">
                 <a
-                  href="tel:+15551234567"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors"
-                >
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-foreground-muted">Phone</p>
-                    <p className="font-medium">(555) 123-4567</p>
-                  </div>
-                </a>
-
-                <a
                   href="mailto:info@metalpowdersupply.com"
                   className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors"
                 >
@@ -54,22 +41,6 @@ const Contact = () => {
                     <p className="font-medium">info@metalpowdersupply.com</p>
                   </div>
                 </a>
-
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-card border border-border">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-foreground-muted">Address</p>
-                    <p className="font-medium">
-                      123 Industrial Parkway
-                      <br />
-                      Suite 100
-                      <br />
-                      Houston, TX 77001
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
 
