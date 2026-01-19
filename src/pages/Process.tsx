@@ -16,6 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import PricingBadge from "@/components/PricingBadge";
+import atomizationBg from "@/assets/atomization-facility.png";
 
 const qualities = [
   {
@@ -162,8 +163,13 @@ const Process = () => {
       </section>
 
       {/* Dual Process Technology */}
-      <section className="py-24 bg-background">
-        <div className="container">
+      <section className="py-24 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${atomizationBg})` }}
+        />
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="container relative z-10">
           <div className="text-center mb-16">
             <span className="text-primary font-medium uppercase tracking-wider text-sm mb-4 block">
               Dual-Process Technology
