@@ -104,8 +104,8 @@ export default {
           to: { opacity: "1", transform: "translateY(0)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px -5px hsl(199 89% 48% / 0.3)" },
-          "50%": { boxShadow: "0 0 40px -5px hsl(199 89% 48% / 0.5)" },
+          "0%, 100%": { boxShadow: "0 0 20px -5px hsl(38 75% 50% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px -5px hsl(38 75% 50% / 0.5)" },
         },
       },
       animation: {
@@ -116,8 +116,8 @@ export default {
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
       },
       boxShadow: {
-        glow: "0 0 40px -10px hsl(199 89% 48% / 0.4)",
-        "glow-lg": "0 0 60px -10px hsl(199 89% 48% / 0.5)",
+        glow: "0 0 40px -10px hsl(38 75% 50% / 0.4)",
+        "glow-lg": "0 0 60px -10px hsl(38 75% 50% / 0.5)",
         card: "0 4px 24px -4px hsl(0 0% 0% / 0.5)",
         elevated: "0 8px 32px -8px hsl(0 0% 0% / 0.6)",
       },
