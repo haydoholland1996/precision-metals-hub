@@ -12,7 +12,6 @@ import {
 
 const products = [
   { name: "Titanium Powder", href: "/products/titanium-powder", symbol: "Ti" },
-  { name: "Titanium Powder", href: "/products/titanium-powder", symbol: "Ti" },
   { name: "Tungsten Powder", href: "/products/tungsten-powder", symbol: "W" },
   { name: "Molybdenum Powder", href: "/products/molybdenum-powder", symbol: "Mo" },
   { name: "Tantalum Powder", href: "/products/tantalum-powder", symbol: "Ta" },
