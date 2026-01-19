@@ -7,6 +7,7 @@ import PricingBadge from "@/components/PricingBadge";
 const certifications = [
   { name: "AS9100D", description: "Aerospace Quality Management" },
   { name: "ISO 9001:2015", description: "Quality Management System" },
+  { name: "FFL", description: "Federal Firearms License" },
 ];
 
 const pillars = [
