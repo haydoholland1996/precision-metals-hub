@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import PricingBadge from "@/components/PricingBadge";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/facility-main-hero.png";
 import {
   Plane,
   Shield,
