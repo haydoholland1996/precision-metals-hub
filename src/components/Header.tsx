@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const products = [
-  { name: "All Powders", href: "/powders", symbol: "⚛" },
+  { name: "Titanium Powder", href: "/products/titanium-powder", symbol: "Ti" },
   { name: "Titanium Powder", href: "/products/titanium-powder", symbol: "Ti" },
   { name: "Tungsten Powder", href: "/products/tungsten-powder", symbol: "W" },
   { name: "Molybdenum Powder", href: "/products/molybdenum-powder", symbol: "Mo" },

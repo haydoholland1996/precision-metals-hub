@@ -409,7 +409,7 @@ const Services = () => {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/powders">Explore Powders</Link>
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
