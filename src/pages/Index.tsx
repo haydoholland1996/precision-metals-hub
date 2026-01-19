@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import PricingBadge from "@/components/PricingBadge";
 import heroBg from "@/assets/facility-main-hero.png";
+import powderBg from "@/assets/powder-piles-bg.png";
 import {
   Plane,
   Shield,
@@ -196,8 +197,13 @@ const Index = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-24 bg-background">
-        <div className="container">
+      <section className="py-24 bg-background relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: `url(${powderBg})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+        <div className="container relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Advanced Manufacturing Services
