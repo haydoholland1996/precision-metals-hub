@@ -141,112 +141,138 @@ const AdditiveManufacturing = () => {
         </div>
       </section>
 
-      {/* Detailed Capabilities Section */}
+      {/* Overview Section */}
       <section className="py-24 bg-background">
         <div className="container">
-          <div className="max-w-5xl mx-auto space-y-0">
-            {/* Overview */}
-            <div className="grid md:grid-cols-3 gap-8 py-12 border-b border-border">
-              <div>
-                <h2 className="text-2xl font-bold">Overview</h2>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Precision-Grade Metal AM</h2>
+            <p className="text-lg text-foreground-secondary leading-relaxed">
+              Additive systems combine precision optics, automated calibration, and realtime melt-pool analytics to deliver repeatable, aerospace-grade parts. Every build is verified for density and geometry, with optional PM-HIP densification achieving forging-equivalent strength.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Capabilities */}
+      <section className="py-24 bg-background-secondary">
+        <div className="container">
+          <h2 className="text-3xl font-bold mb-4">Core Capabilities</h2>
+          <p className="text-foreground-secondary mb-12 max-w-2xl">
+            Industrial-scale additive manufacturing with full traceability and compliance.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
+              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <Layers className="h-6 w-6 text-primary" />
               </div>
-              <div className="md:col-span-2">
-                <p className="text-foreground-secondary leading-relaxed">
-                  Additive systems combine precision optics, automated calibration, and realtime melt-pool analytics to deliver repeatable, aerospace-grade parts. Every build is verified for density and geometry, with optional PM-HIP densification achieving forging-equivalent strength.
-                </p>
+              <h3 className="font-semibold mb-2">Build Volume</h3>
+              <p className="text-foreground-secondary text-sm">Up to 600 × 600 × 600 mm with 1m vertical height</p>
+            </div>
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
+              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <Zap className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-semibold mb-2">Multi-Laser Fusion</h3>
+              <p className="text-foreground-secondary text-sm">Powder-bed fusion for high throughput production</p>
+            </div>
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
+              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <CheckCircle className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-semibold mb-2">Feature Resolution</h3>
+              <p className="text-foreground-secondary text-sm">≈ 200 μm precision with integrated finishing</p>
+            </div>
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-colors">
+              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <Shield className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-semibold mb-2">Full Traceability</h3>
+              <p className="text-foreground-secondary text-sm">ITAR-compliant, ISO 9001 certified facilities</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Features */}
+      <section className="py-24 bg-background">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Advanced Technology Features</h2>
+              <p className="text-foreground-secondary mb-8">
+                State-of-the-art monitoring and validation systems ensure consistent, production-ready output.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  "Optical & thermal layer-by-layer sensing",
+                  "Melt-pool analytics for density control",
+                  "Closed-loop calibration (micron accuracy)",
+                  "Automated build validation reports",
+                  "Support-free geometry for ducts/manifolds",
+                  "On-site heat treatment & inspection",
+                ].map((feature) => (
+                  <div key={feature} className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground-secondary">{feature}</span>
+                  </div>
+                ))}
               </div>
             </div>
-
-            {/* Core Capabilities */}
-            <div className="grid md:grid-cols-3 gap-8 py-12 border-b border-border">
-              <div>
-                <h2 className="text-2xl font-bold">Core Capabilities:</h2>
-              </div>
-              <div className="md:col-span-2">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Build volume up to 600 × 600 × 600 mm</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Vertical build height to 1 m</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Multi-laser powder-bed fusion for throughput</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Feature resolution ≈ 200 μm</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Integrated machining & finishing</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Full powder-to-part traceability</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">ITAR-compliant facilities, ISO 9001 certified</span>
-                  </li>
-                </ul>
+            <div className="bg-card rounded-xl p-8 border border-border">
+              <h3 className="text-xl font-semibold mb-6">Seamless Scaling</h3>
+              <p className="text-foreground-secondary mb-6">
+                Transition from R&D to production without retooling. Our network maintains consistent quality across prototype and high-volume runs.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {["Prototyping", "Low-Volume", "High-Volume"].map((scale) => (
+                  <span key={scale} className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
+                    {scale}
+                  </span>
+                ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Technology Features */}
-            <div className="grid md:grid-cols-3 gap-8 py-12 border-b border-border">
-              <div>
-                <h2 className="text-2xl font-bold">Technology Features:</h2>
+      {/* Material Capabilities */}
+      <section className="py-24 bg-background-secondary">
+        <div className="container">
+          <h2 className="text-3xl font-bold mb-4 text-center">Material Capabilities</h2>
+          <p className="text-foreground-secondary mb-12 text-center max-w-2xl mx-auto">
+            Extensive material library for demanding applications across aerospace, defense, and industrial sectors.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-card rounded-xl p-8 border border-border">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Atom className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold">Metals</h3>
               </div>
-              <div className="md:col-span-2">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Optical & thermal layer-by-layer sensing</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Melt-pool analytics for density control</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Closed-loop calibration (micron accuracy)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Automated build validation reports</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Support-free geometry for ducts/manifolds</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">Seamless transition from R&D to production</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-foreground-secondary">—</span>
-                    <span className="text-foreground-secondary">On-site heat treatment and dimensional inspection</span>
-                  </li>
-                </ul>
+              <div className="flex flex-wrap gap-2">
+                {["Ti-6Al-4V", "Inconel 625/718", "Hastelloy C22/X", "Haynes 214/282", "M300 Steel", "Stainless 415/17-4 PH", "Al F357", "AlSi10Mg", "Scalmalloy", "CuNi30", "GRCop-42"].map((metal) => (
+                  <span key={metal} className="px-3 py-1.5 rounded-md bg-background text-foreground-secondary text-sm border border-border">
+                    {metal}
+                  </span>
+                ))}
               </div>
             </div>
-
-            {/* Material Capabilities */}
-            <div className="grid md:grid-cols-3 gap-8 py-12">
-              <div>
-                <h2 className="text-2xl font-bold">Material Capabilities:</h2>
+            <div className="bg-card rounded-xl p-8 border border-border">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Layers className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold">Polymers</h3>
               </div>
-              <div className="md:col-span-2">
-                <p className="text-foreground-secondary leading-relaxed">
-                  <span className="font-medium text-foreground">Metals:</span> Ti-6Al-4V, Inconel 625/718, Hastelloy C22/X, Haynes 214/282, M300 Steel, Stainless 415/17-4 PH, Al F357, Aheadd CP1, AlSi10Mg, Scalmalloy, CuNi30, GRCop-42
-                </p>
-                <p className="text-foreground-secondary leading-relaxed mt-4">
-                  <span className="font-medium text-foreground">Polymers:</span> ULTEM 9085/1010, PEEK, PEKK, PPSU, PA11/PA12, PC, ABS-ESD7, ASA, PVDF, PTFE, Carbon-Fiber Nylon, Glass-Fiber PA
-                </p>
+              <div className="flex flex-wrap gap-2">
+                {["ULTEM 9085/1010", "PEEK", "PEKK", "PPSU", "PA11/PA12", "PC", "ABS-ESD7", "ASA", "PVDF", "PTFE", "Carbon-Fiber Nylon", "Glass-Fiber PA"].map((polymer) => (
+                  <span key={polymer} className="px-3 py-1.5 rounded-md bg-background text-foreground-secondary text-sm border border-border">
+                    {polymer}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
