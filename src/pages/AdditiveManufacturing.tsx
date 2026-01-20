@@ -327,35 +327,6 @@ const AdditiveManufacturing = () => {
           </div>
         </div>
       </section>
-
-      {/* Production Scale */}
-      <section className="py-24 bg-background-secondary">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">From Prototype to Production</h2>
-            <p className="text-foreground-secondary text-lg mb-8">
-              We're built to scale with your program requirements. Whether you need
-              a single prototype or recurring high-volume production, our certified
-              manufacturing network delivers.
-            </p>
-            <div className="flex flex-wrap justify-center gap-8">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
-                <span>Prototyping</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
-                <span>Low-Volume</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
-                <span>High-Volume Production</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Industries */}
       <section className="py-24 bg-background">
         <div className="container">
