@@ -345,51 +345,6 @@ const AdditiveManufacturing = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-24 bg-background-secondary">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-12 text-center">Why Choose Us</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <Factory className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-2">US-Based Manufacturing</h3>
-              <p className="text-foreground-secondary text-sm">
-                Domestic production with full supply chain control
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-2">Certified Network</h3>
-              <p className="text-foreground-secondary text-sm">
-                AS9100D, ISO 9001:2015 certified
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <Layers className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-2">Integrated Powder Supply</h3>
-              <p className="text-foreground-secondary text-sm">
-                Seamless material sourcing from our powder division
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-2">Fast Turnaround</h3>
-              <p className="text-foreground-secondary text-sm">
-                Expedited options for urgent requirements
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* SEO Content */}
       <section className="py-24 bg-background border-t border-border">
         <div className="container">
