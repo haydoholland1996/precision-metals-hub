@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
-import pmhipHero from "@/assets/pmhip-hero.jpg";
+import pmhipHero from "@/assets/pmhip-hero-new.jpg";
 
 const benefits = [
   "Custom-engineered near-net-shape components",
