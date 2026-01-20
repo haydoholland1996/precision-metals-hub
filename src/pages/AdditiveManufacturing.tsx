@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
-import additiveHero from "@/assets/additive-hero.jpg";
+import additiveHero from "@/assets/additive-facility-hero.jpg";
 
 const technologies = [
   {
