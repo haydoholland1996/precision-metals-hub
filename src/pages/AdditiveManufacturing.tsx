@@ -141,6 +141,118 @@ const AdditiveManufacturing = () => {
         </div>
       </section>
 
+      {/* Detailed Capabilities Section */}
+      <section className="py-24 bg-background">
+        <div className="container">
+          <div className="max-w-5xl mx-auto space-y-0">
+            {/* Overview */}
+            <div className="grid md:grid-cols-3 gap-8 py-12 border-b border-border">
+              <div>
+                <h2 className="text-2xl font-bold">Overview</h2>
+              </div>
+              <div className="md:col-span-2">
+                <p className="text-foreground-secondary leading-relaxed">
+                  Additive systems combine precision optics, automated calibration, and realtime melt-pool analytics to deliver repeatable, aerospace-grade parts. Every build is verified for density and geometry, with optional PM-HIP densification achieving forging-equivalent strength.
+                </p>
+              </div>
+            </div>
+
+            {/* Core Capabilities */}
+            <div className="grid md:grid-cols-3 gap-8 py-12 border-b border-border">
+              <div>
+                <h2 className="text-2xl font-bold">Core Capabilities:</h2>
+              </div>
+              <div className="md:col-span-2">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Build volume up to 600 × 600 × 600 mm</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Vertical build height to 1 m</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Multi-laser powder-bed fusion for throughput</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Feature resolution ≈ 200 μm</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Integrated machining & finishing</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Full powder-to-part traceability</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">ITAR-compliant facilities, ISO 9001 certified</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Technology Features */}
+            <div className="grid md:grid-cols-3 gap-8 py-12 border-b border-border">
+              <div>
+                <h2 className="text-2xl font-bold">Technology Features:</h2>
+              </div>
+              <div className="md:col-span-2">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Optical & thermal layer-by-layer sensing</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Melt-pool analytics for density control</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Closed-loop calibration (micron accuracy)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Automated build validation reports</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Support-free geometry for ducts/manifolds</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">Seamless transition from R&D to production</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-foreground-secondary">—</span>
+                    <span className="text-foreground-secondary">On-site heat treatment and dimensional inspection</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Material Capabilities */}
+            <div className="grid md:grid-cols-3 gap-8 py-12">
+              <div>
+                <h2 className="text-2xl font-bold">Material Capabilities:</h2>
+              </div>
+              <div className="md:col-span-2">
+                <p className="text-foreground-secondary leading-relaxed">
+                  <span className="font-medium text-foreground">Metals:</span> Ti-6Al-4V, Inconel 625/718, Hastelloy C22/X, Haynes 214/282, M300 Steel, Stainless 415/17-4 PH, Al F357, Aheadd CP1, AlSi10Mg, Scalmalloy, CuNi30, GRCop-42
+                </p>
+                <p className="text-foreground-secondary leading-relaxed mt-4">
+                  <span className="font-medium text-foreground">Polymers:</span> ULTEM 9085/1010, PEEK, PEKK, PPSU, PA11/PA12, PC, ABS-ESD7, ASA, PVDF, PTFE, Carbon-Fiber Nylon, Glass-Fiber PA
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Technologies */}
       <section className="py-24 bg-background-secondary">
         <div className="container">
